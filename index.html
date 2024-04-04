@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Stack</title>
+</head>
+<body>
+<section class="bookCart--Section flex">
+    <div class="bookCart--Container container flex-column">
+        <h2>My BookCart Store</h2>
+        <div class="bookCart--input-container flex-column">
+            <label for="bookNameInput" class="label hightlight-text">Book Name</label>
+            <input type="text" name="bookNameInput" id="bookNameInput" class="input" autofocus>
+            <p class="error-text hidden" id="errorMsg"></p>
+            <p class="success-text hidden" id="successMsg"></p>
+        </div>
+
+        <button class="button button--add" id="addToCartButton"> Add to BookCart</button>
+        <button class="button button--remove" id="removeFromCartButton"> Remove from BookCart</button>
+
+    </div>
+    <div class="bookList--Container container flex-column">
+        <h2>My Book List</h2>
+        <ul class="bookList" id="bookList">
+<!--            <li class="bookList&#45;&#45;item">📕 <span>Book 1</span></li>-->
+        </ul>
+    </div>
+</section>
+</body>
+<script defer src="main.js"></script>
+</html>
